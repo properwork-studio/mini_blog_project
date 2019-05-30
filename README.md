@@ -1,7 +1,7 @@
 # mini_blog_project
 
 ### Java web course mini project - Media blog
-#####Pages：
+##### Pages：
   >1) index: blog list page
   >2) single: blog single page
   >3) about: blog about page(list some author info)
