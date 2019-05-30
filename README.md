@@ -7,3 +7,4 @@
   >5) login: blog owner login page - 2019.05.30
   >6) admin-index: blog admin list page(after login) - 2019.05.30
   >7) admin-single: blog admin single post new/edit page - 2019.05.30
+  >8) signin: to become a blog author
