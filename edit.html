@@ -19,71 +19,70 @@
     </div>
   </nav>
 
-  <div class="container">
-    <h3 class="my-5">Now edit - Post title</h3>
-
-    <form action="admin.html" class="d-flex flex-column">
-      <div class="form-group row">
-        <label for="title" class="col-sm-2 col-form-label">Title</label>
-        <div class="col-sm-10">
-          <input type="text" readonly class="form-control" id="title" name="title" placeholder="Enter the post title">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="categorie" class="col-sm-2 col-form-label">Categories</label>
-        <div class="col-sm-10">
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" value="heroic" id="heroic" name="categories">
-            <label class="form-check-label" for="heroic">Marvel/DC</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" value="action" id="action" name="categories">
-            <label class="form-check-label" for="action">Action</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" value="horro" id="horro" name="categories">
-            <label class="form-check-label" for="horro">Horror</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" value="comedy" id="comedy" name="categories">
-            <label class="form-check-label" for="comedy">Comedy</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" value="fiction" id="fiction" name="categories">
-            <label class="form-check-label" for="fiction">Fiction</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" value="romance" id="romance" name="categories">
-            <label class="form-check-label" for="romance">Romance</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" value="animate" id="animate" name="categories">
-            <label class="form-check-label" for="animate">Animate</label>
+    <form action="admin.html">
+      <div class="container">
+        <h3 class="my-5">Now edit - Post title</h3>
+        <div class="form-group row">
+          <label for="title" class="col-sm-2 col-form-label">Title</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="title" name="title" placeholder="Enter the post title">
           </div>
         </div>
-      </div>
-      <hr class="my-3 w-100">
-      <div class="form-group">
-        <h6 class="mb-3 mt-3">Here's where your content goes...</h6>
-        <textarea id="editor" name="content"></textarea>
-        <script>var editor = new Jodit('#editor');</script>
-      </div>
-      <div class="btn-group align-self-end mb-5">
-        <a href="admin.html" class="btn btn-outline-primary px-4 mr-2">Cancel</a>
-        <button type="submit" class="btn btn-primary px-4">Post it</button>
+        <div class="form-group row">
+          <label for="categorie" class="col-sm-2 col-form-label">Categories</label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="heroic" id="heroic" name="categories">
+              <label class="form-check-label" for="heroic">Marvel/DC</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="action" id="action" name="categories">
+              <label class="form-check-label" for="action">Action</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="horro" id="horro" name="categories">
+              <label class="form-check-label" for="horro">Horror</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="comedy" id="comedy" name="categories">
+              <label class="form-check-label" for="comedy">Comedy</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="fiction" id="fiction" name="categories">
+              <label class="form-check-label" for="fiction">Fiction</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="romance" id="romance" name="categories">
+              <label class="form-check-label" for="romance">Romance</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="animate" id="animate" name="categories">
+              <label class="form-check-label" for="animate">Animate</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="image" class="col-sm-2 col-form-label">Feature Image</label>
+          <div class="col-sm-10">
+            <input type="file" class="form-control-file" id="image" name="iamge" placeholder="Upload an feature image for your post...">
+          </div>
+        </div>
+        <hr class="my-3 w-100">
+        <div class="form-group">
+          <h6 class="mb-3 mt-3">Here's where your content goes...</h6>
+          <textarea id="editor" name="content"></textarea>
+          <script>var editor = new Jodit('#editor');</script>
+        </div>
+        <footer class="bg-light p-4 mt-5 fixed-bottom">
+          <div class="container d-flex flex-column">
+            <div class="btn-group align-self-end mb-0">
+              <a href="admin.html" class="btn btn-outline-primary px-4 mr-2">Cancel</a>
+              <button type="submit" class="btn btn-primary px-4">Post it</button>
+            </div>
+          </div>
+        </footer>
       </div>
     </form>
-  </div>
-
-  <div class="my-5">&nbsp;</div>
-
-  <footer class="bg-light p-4 mt-5">
-    <div class="container my-4">
-      <p class="text-center mb-1">If you're author, please login <a href="login.html">here</a></p>
-      <p class="text-center">See more about those author, please check out the <a href="about.html">about us</a> page
-      </p>
-    </div>
-  </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
