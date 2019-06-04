@@ -8,5 +8,6 @@
   >6) admin-index: blog admin list page(after login) - 2019.05.30
   >7) admin-single: blog admin single post new/edit page - 2019.05.30
   >8) signun: to become a blog author - 2019.06.03
+  >9) profile: editing the author profile - 2019.06.04
 
 ###### Frontend Ready To Go - 2019.06.04
