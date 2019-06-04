@@ -14,11 +14,12 @@
   <nav class="navbar navbar-dark bg-primary">
     <div class="container">
       <a class="navbar-brand mb-0 h1" href="index.html">Mini Blog</a>
+      <h6 class="mb-0 text-white">Welcome back, Tom</h6>
     </div>
   </nav>
 
-  <div class="container d-flex flex-column">
-    <h5 class="mt-5 mb-2 text-right">Welcome back Tom</h5>
+  <div class="container d-flex flex-column mt-5">
+    <!-- <h5 class="mt-5 mb-2 text-right">Welcome back Tom</h5> -->
     <h2 class="mb-5">Here's all your posts</h2>
     
     <table class="table mb-5">
@@ -39,7 +40,7 @@
           <td>2019.05.30</td>
           <td class="text-center">
             <a href="edit.html" class="mr-3"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-            <a href="edit.html"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            <a href="" data-toggle="modal" data-target="#deleteConfirm"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
           </td>
         </tr>
         <tr>
@@ -49,7 +50,7 @@
           <td>2019.05.27</td>
           <td class="text-center">
             <a href="edit.html" class="mr-3"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-            <a href="edit.html"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            <a href="" data-toggle="modal" data-target="#deleteConfirm"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
           </td>
         </tr>
         <tr>
@@ -59,7 +60,7 @@
           <td>2019.05.20</td>
           <td class="text-center">
             <a href="edit.html" class="mr-3"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-            <a href="edit.html"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            <a href="" data-toggle="modal" data-target="#deleteConfirm"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
           </td>
         </tr>
         <tr>
@@ -69,7 +70,7 @@
           <td>2019.05.15</td>
           <td class="text-center">
             <a href="edit.html" class="mr-3"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-            <a href="edit.html"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            <a href="" data-toggle="modal" data-target="#deleteConfirm"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
           </td>
         </tr>
         <tr>
@@ -79,7 +80,7 @@
           <td>2019.05.01</td>
           <td class="text-center">
             <a href="edit.html" class="mr-3"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-            <a href="edit.html"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            <a href="" data-toggle="modal" data-target="#deleteConfirm"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
           </td>
         </tr>
         <tr>
@@ -89,7 +90,7 @@
           <td>2019.04.29</td>
           <td class="text-center">
             <a href="edit.html" class="mr-3"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-            <a href="edit.html"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            <a href="" data-toggle="modal" data-target="#deleteConfirm"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
           </td>
         </tr>
         <tr>
@@ -99,7 +100,7 @@
           <td>2019.04.20</td>
           <td class="text-center">
             <a href="edit.html" class="mr-3"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-            <a href="edit.html"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            <a href="" data-toggle="modal" data-target="#deleteConfirm"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
           </td>
         </tr>
         <tr>
@@ -109,20 +110,58 @@
           <td>2019.04.17</td>
           <td class="text-center">
             <a href="edit.html" class="mr-3"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-            <a href="edit.html"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            <a href="" data-toggle="modal" data-target="#deleteConfirm"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
           </td>
         </tr>
       </tbody>
     </table>
-    <a href="index.html" class="btn btn-outline-primary mb-4 align-self-end px-3">Go to homepage</a>
+    <div class="align-self-center">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&lt;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&gt;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <footer class="bg-light p-4 mt-5">
-    <div class="container my-4">
-      <p class="text-center mb-1">If you're an author, please login <a href="login.html">here</a></p>
-      <p class="text-center">See more about those author, please check out the <a href="about.html">about us</a> page</p>
+  <footer class="bg-light py-4 px-4 fixed-bottom">
+    <div class="container">
+      <a href="edit.html" class="btn btn-primary px-3 mb-0">Add new post</a>
+      <a href="index.html" class="btn btn-outline-primary mb-0 align-self-end px-3">Go back to homepage</a>
     </div>
   </footer>
+
+  <div class="modal fade" id="deleteConfirm" tabindex="-1" role="dialog" aria-labelledby="deleteConfirmLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteConfirmLabel">Are You Sure?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Are you sure you want to delete this customer?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Close</button>
+          <a href="#" class="btn btn-primary btn-lg">Delete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

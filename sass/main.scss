@@ -1,0 +1,50 @@
+
+// $color-primary-light: #2998ff;
+// $color-primary-dark: #5643fa;
+
+$color-primary-light: #dc2430;
+$color-primary-dark: #2657eb;
+
+*,p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.landing {
+  &__container {
+    background-image: linear-gradient(120deg, $color-primary-light, $color-primary-dark);
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 4rem;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,.2);
+    border-radius: 5px;
+    transition: all .2s;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 3rem 5rem rgba(0,0,0,.1);
+    }
+  }
+}
+
+.list{
+  &__search {
+    width: 300px;
+  }
+
+  &__container {
+    max-width: 90vw;;
+  }
+}
+
+.footer {
+  box-shadow: 0 -5px 10px rgba(0,0,0,.05);
+}
