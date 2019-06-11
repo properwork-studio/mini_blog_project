@@ -79,6 +79,19 @@ $color-primary-dark: #2657eb;
   }
 }
 
+.profile__image {
+  overflow: hidden;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  & img {
+    width: 100%;
+  }
+}
+
 .footer {
   box-shadow: 0 -5px 10px rgba(0,0,0,.05);
 }
